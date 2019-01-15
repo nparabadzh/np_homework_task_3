@@ -48,6 +48,7 @@ public class TCPmultiServer_threads implements Runnable {    //TCPmultiServer_th
           break;
         }
         out.println(query);
+        System.out.println("Test: " + query); // for testing the connection
       }
       System.out.println("Connection with " + clientSocket.getInetAddress() + " closed.");
       clientSocket.close();
